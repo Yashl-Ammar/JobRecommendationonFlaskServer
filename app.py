@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 #Text Handling Libraries
-import re
+import  re
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 df2 = pd.read_csv('freelancer_job_postings.csv',index_col='projectId')  
@@ -60,4 +60,5 @@ def content_recommendation_v2(title):
 
 
 title = 'Develop a Linux based BT receiving daemon to "grab" BT device values'
+print(content_recommendation_v2(title))
 print(content_recommendation_v2(title))
